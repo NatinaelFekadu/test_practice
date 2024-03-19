@@ -24,6 +24,6 @@ class Product:
         Returns:
             float: The total calculated by multiplying price and quantity.
         """
-        # if self.price < 0 or self.quantity < 0:
-        #     raise ValueError("Negative values are not allowed")
+        if self.price < 0 or self.quantity < 0:
+            raise ValueError("Negative values are not allowed")
         return self.price * self.quantity
