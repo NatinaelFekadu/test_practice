@@ -16,6 +16,14 @@ class Product:
         self.quantity = quantity
 
     def calculateTotal(self):
+        """
+        Calculate the total by multiplying the price with the quantity.
+
+        No parameters.
+        
+        Returns:
+            float: The total calculated by multiplying price and quantity.
+        """
         if self.price < 0 or self.quantity < 0:
             raise ValueError("Negative values are not allowed")
         return self.price * self.quantity
